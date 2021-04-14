@@ -1,0 +1,8 @@
+import {combineReducers} from "redux";
+import {orderReducer} from "./orderReducer";
+
+export const rootReducer = combineReducers({
+    order: orderReducer
+});
+
+export type AppState = ReturnType<typeof rootReducer>
